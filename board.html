@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Soul Strap Moodboard Engine</title>
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --panel: #151518;
+      --panel2: #1b1b1f;
+      --line: #2a2a31;
+      --text: #f2f2f0;
+      --muted: #bbbbc0;
+      --accent: #e8e5dc;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 34px 34px 24px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: rgba(13,13,15,.95); backdrop-filter: blur(10px); z-index: 10; }
+    h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: -.02em; }
+    header p { margin: 0; color: var(--muted); max-width: 1100px; line-height: 1.55; }
+    nav { margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap; }
+    nav a { color: var(--accent); text-decoration: none; border: 1px solid var(--line); background: var(--panel); padding: 9px 12px; border-radius: 999px; font-size: 13px; }
+    .wrap { padding: 28px; }
+    .section { margin-bottom: 42px; }
+    .section-head h2 { margin: 0 0 6px; font-size: 26px; }
+    .objective { margin: 0; color: var(--muted); }
+    .brief { display: grid; grid-template-columns: 1fr 2fr; gap: 18px; margin: 18px 0 20px; }
+    .pinned, .rules { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+    .pinned ul, .rules ul { margin: 10px 0 0 18px; }
+    .pinned li, .rules li { margin-bottom: 8px; line-height: 1.5; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 18px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+    .hero { width: 100%; display: block; background: #fff; }
+    .meta { padding: 16px; }
+    .meta h3 { margin: 0 0 8px; font-size: 20px; }
+    .meta p { margin: 0 0 10px; color: var(--muted); line-height: 1.5; }
+    .small { font-size: 13px; opacity: .95; }
+    .thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 12px 0 14px; }
+    .thumb { width: 100%; height: 110px; object-fit: cover; border-radius: 12px; background: #fff; border: 1px solid var(--line); }
+    .links a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Soul Strap — Moodboard Engine</h1>
+    <p>Board local estruturado para apresentação estratégica: Tipografia → Elementos → Fotografia → Embalagens.</p>
+    <nav>
+      <a href="#tipografia">Tipografia</a>
+      <a href="#elementos">Elementos</a>
+      <a href="#fotografia">Fotografia</a>
+      <a href="#embalagens">Embalagens</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    
+    <section class="section" id="tipografia">
+      <div class="section-head">
+        <div>
+          <h2>1. Tipografia</h2>
+          <p class="objective">Objetivo: definir a voz visual da marca.</p>
+        </div>
+      </div>
+
+      <div class="brief">
+        <div class="pinned"><strong>Direção fixa</strong><ul><li>Direção recomendada: Aeonik, Söhne, Suisse Int’l, Neue Haas Grotesk.</li><li>Use esta seção para repertório de ritmo, contraste, hierarquia, caixa alta e presença editorial.</li></ul></div>
+        <div class="rules">
+          <strong>Critérios estratégicos</strong>
+          <ul>
+            <li>Tipografia principal — fonte que representa a Soul Strap no seu estado mais forte: limpa, contemporânea, precisa, premium.</li><li>Tipografia de apoio — fonte para complementar sem competir com a principal.</li><li>Sensação que precisa transmitir — precisão, sofisticação discreta, utilidade refinada, contemporaneidade.</li><li>Critérios de escolha — construção limpa, boa presença em caixa alta, peso visual equilibrado, aspecto editorial e premium.</li><li>O que evitar — fontes decorativas, excessivamente fashion, futuristas demais ou genéricas demais.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid">
+        
+      <article class="card">
+        <a href="screenshots/velotti.png" target="_blank"><img class="hero" src="screenshots/velotti.png" alt="Velotti" /></a>
+        <div class="meta">
+          <h3>Velotti</h3>
+          <p class="small">Velotti :: Behance</p>
+          <p>Branding, Fashion, Graphic Design, Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Adobe Stock</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/velotti-01.png" alt="Velotti" /><img class="thumb" src="thumbs/velotti-02.png" alt="Velotti" /><img class="thumb" src="thumbs/velotti-03.png" alt="Velotti" /><img class="thumb" src="thumbs/velotti-04.png" alt="Velotti" /></div>
+          <p class="links">
+            <a href="screenshots/velotti.png" target="_blank">Screenshot</a>
+             · <a href="pdf/velotti.pdf" target="_blank">PDF</a>
+            · <a href="raw/velotti.txt" target="_blank">Texto</a>
+            · <a href="meta/velotti.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/218800855/Velotti" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/chromia-blockchain-identity.png" target="_blank"><img class="hero" src="screenshots/chromia-blockchain-identity.png" alt="Chromia Blockchain Identity" /></a>
+        <div class="meta">
+          <h3>Chromia Blockchain Identity</h3>
+          <p class="small">Chromia — Blockchain Identity, UX/UI & Marketing Design :: Behance</p>
+          <p>We teamed up with Chromia, a Web3 blockchain platform that’s on a mission to make decentralized apps faster, smarter, and more accessible. Their vision is simple: blockchain should feel creative, human, and open to every</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/chromia-blockchain-identity-01.png" alt="Chromia Blockchain Identity" /><img class="thumb" src="thumbs/chromia-blockchain-identity-02.png" alt="Chromia Blockchain Identity" /><img class="thumb" src="thumbs/chromia-blockchain-identity-03.png" alt="Chromia Blockchain Identity" /><img class="thumb" src="thumbs/chromia-blockchain-identity-04.png" alt="Chromia Blockchain Identity" /></div>
+          <p class="links">
+            <a href="screenshots/chromia-blockchain-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/chromia-blockchain-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/chromia-blockchain-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/chromia-blockchain-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/234725045/Chromia-Blockchain-Identity-UXUI-Marketing-Design" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/attico-brand-identity.png" target="_blank"><img class="hero" src="screenshots/attico-brand-identity.png" alt="Attico Brand Identity" /></a>
+        <div class="meta">
+          <h3>Attico Brand Identity</h3>
+          <p class="small">Attico™ | Brand Identity | '24 :: Behance</p>
+          <p>Graphic Design, Art Direction, Branding, Adobe Photoshop, Adobe Illustrator, Figma</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/attico-brand-identity-01.png" alt="Attico Brand Identity" /><img class="thumb" src="thumbs/attico-brand-identity-02.png" alt="Attico Brand Identity" /><img class="thumb" src="thumbs/attico-brand-identity-03.png" alt="Attico Brand Identity" /><img class="thumb" src="thumbs/attico-brand-identity-04.png" alt="Attico Brand Identity" /></div>
+          <p class="links">
+            <a href="screenshots/attico-brand-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/attico-brand-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/attico-brand-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/attico-brand-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/193275595/Attico-Brand-Identity-24" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/artica-id.png" target="_blank"><img class="hero" src="screenshots/artica-id.png" alt="ARTICA ID" /></a>
+        <div class="meta">
+          <h3>ARTICA ID</h3>
+          <p class="small">ARTICA® — ID :: Behance</p>
+          <p>ARTICA is not just streetwear. It’s the silence before the storm, the chill before the fire. Born in Germany and designed for the bold, ARTICA is for those who wear their identity like armor. The rebels, the creatives, t</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/artica-id-01.png" alt="ARTICA ID" /><img class="thumb" src="thumbs/artica-id-02.png" alt="ARTICA ID" /><img class="thumb" src="thumbs/artica-id-03.png" alt="ARTICA ID" /><img class="thumb" src="thumbs/artica-id-04.png" alt="ARTICA ID" /></div>
+          <p class="links">
+            <a href="screenshots/artica-id.png" target="_blank">Screenshot</a>
+             · <a href="pdf/artica-id.pdf" target="_blank">PDF</a>
+            · <a href="raw/artica-id.txt" target="_blank">Texto</a>
+            · <a href="meta/artica-id.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/229381599/ARTICA-ID" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/atelier-by-shouq-brand-identity.png" target="_blank"><img class="hero" src="screenshots/atelier-by-shouq-brand-identity.png" alt="Atelier By Shouq Brand Identity" /></a>
+        <div class="meta">
+          <h3>Atelier By Shouq Brand Identity</h3>
+          <p class="small">Atelier By Shouq | Brand Identity :: Behance</p>
+          <p>Atelier by Shouq was envisioned as more than a fashion label—it is an exploration of refined femininity through form, texture, and intention.</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-01.png" alt="Atelier By Shouq Brand Identity" /><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-02.png" alt="Atelier By Shouq Brand Identity" /><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-03.png" alt="Atelier By Shouq Brand Identity" /><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-04.png" alt="Atelier By Shouq Brand Identity" /></div>
+          <p class="links">
+            <a href="screenshots/atelier-by-shouq-brand-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/atelier-by-shouq-brand-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/atelier-by-shouq-brand-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/atelier-by-shouq-brand-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/246012909/Atelier-By-Shouq-Brand-Identity" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/gar-skincare-identity.png" target="_blank"><img class="hero" src="screenshots/gar-skincare-identity.png" alt="GAR Skincare Identity" /></a>
+        <div class="meta">
+          <h3>GAR Skincare Identity</h3>
+          <p class="small">GAR — Skincare Identity :: Behance</p>
+          <p>GAR is a skincare and beauty brand rooted in nature: earth, ocean, and flora. Inspired by grounding rituals, it reflects purity, balance, and quiet strength. The brand identity features a muted, earthy palette and minima</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/gar-skincare-identity-01.png" alt="GAR Skincare Identity" /><img class="thumb" src="thumbs/gar-skincare-identity-02.png" alt="GAR Skincare Identity" /><img class="thumb" src="thumbs/gar-skincare-identity-03.png" alt="GAR Skincare Identity" /><img class="thumb" src="thumbs/gar-skincare-identity-04.png" alt="GAR Skincare Identity" /></div>
+          <p class="links">
+            <a href="screenshots/gar-skincare-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/gar-skincare-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/gar-skincare-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/gar-skincare-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/225273181/GAR-Skincare-Identity" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/queenia-modern-elegant-serif-font.png" target="_blank"><img class="hero" src="screenshots/queenia-modern-elegant-serif-font.png" alt="Queenia Modern Elegant Serif Font" /></a>
+        <div class="meta">
+          <h3>Queenia Modern Elegant Serif Font</h3>
+          <p class="small">Queenia Modern & Elegant Serif Font :: Behance</p>
+          <p>Graphic Design, Branding, Typography, Adobe Photoshop, Adobe Illustrator</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/queenia-modern-elegant-serif-font-01.png" alt="Queenia Modern Elegant Serif Font" /><img class="thumb" src="thumbs/queenia-modern-elegant-serif-font-02.png" alt="Queenia Modern Elegant Serif Font" /><img class="thumb" src="thumbs/queenia-modern-elegant-serif-font-03.png" alt="Queenia Modern Elegant Serif Font" /><img class="thumb" src="thumbs/queenia-modern-elegant-serif-font-04.png" alt="Queenia Modern Elegant Serif Font" /></div>
+          <p class="links">
+            <a href="screenshots/queenia-modern-elegant-serif-font.png" target="_blank">Screenshot</a>
+             · <a href="pdf/queenia-modern-elegant-serif-font.pdf" target="_blank">PDF</a>
+            · <a href="raw/queenia-modern-elegant-serif-font.txt" target="_blank">Texto</a>
+            · <a href="meta/queenia-modern-elegant-serif-font.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/247315585/QueeniaModern-Elegant-Serif-Font" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/noel.png" target="_blank"><img class="hero" src="screenshots/noel.png" alt="NOEL" /></a>
+        <div class="meta">
+          <h3>NOEL</h3>
+          <p class="small">NOEL :: Behance</p>
+          <p>Branding, Graphic Design, Packaging, Adobe Illustrator, Adobe Photoshop, Figma</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/noel-01.png" alt="NOEL" /><img class="thumb" src="thumbs/noel-02.png" alt="NOEL" /><img class="thumb" src="thumbs/noel-03.png" alt="NOEL" /><img class="thumb" src="thumbs/noel-04.png" alt="NOEL" /></div>
+          <p class="links">
+            <a href="screenshots/noel.png" target="_blank">Screenshot</a>
+             · <a href="pdf/noel.pdf" target="_blank">PDF</a>
+            · <a href="raw/noel.txt" target="_blank">Texto</a>
+            · <a href="meta/noel.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/154268451/NOEL" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/loop-fashion-e-commerce-branding-web-design.png" target="_blank"><img class="hero" src="screenshots/loop-fashion-e-commerce-branding-web-design.png" alt="LOOP Fashion E-commerce Branding Web Design" /></a>
+        <div class="meta">
+          <h3>LOOP Fashion E-commerce Branding Web Design</h3>
+          <p class="small">LOOP — Fashion E-commerce, Branding & Web Design :: Behance</p>
+          <p>LOOP is a creative design concept where we bring together sustainable fashion, e-commerce thinking, and visual identity into one calm, modern experience.We explored how branding, UX/UI, and web design can shape a fashion</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-01.png" alt="LOOP Fashion E-commerce Branding Web Design" /><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-02.png" alt="LOOP Fashion E-commerce Branding Web Design" /><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-03.png" alt="LOOP Fashion E-commerce Branding Web Design" /><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-04.png" alt="LOOP Fashion E-commerce Branding Web Design" /></div>
+          <p class="links">
+            <a href="screenshots/loop-fashion-e-commerce-branding-web-design.png" target="_blank">Screenshot</a>
+             · <a href="pdf/loop-fashion-e-commerce-branding-web-design.pdf" target="_blank">PDF</a>
+            · <a href="raw/loop-fashion-e-commerce-branding-web-design.txt" target="_blank">Texto</a>
+            · <a href="meta/loop-fashion-e-commerce-branding-web-design.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/241787329/LOOP-Fashion-E-commerce-Branding-Web-Design" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/frest-brand-identity-naming.png" target="_blank"><img class="hero" src="screenshots/frest-brand-identity-naming.png" alt="FREST Brand Identity Naming" /></a>
+        <div class="meta">
+          <h3>FREST Brand Identity Naming</h3>
+          <p class="small">FREST | BRAND IDENTITY & NAMING :: Behance</p>
+          <p>FREST is a modern skincare brand. The project includes the development of naming, logo, packaging, and a cohesive visual identity.</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/frest-brand-identity-naming-01.png" alt="FREST Brand Identity Naming" /><img class="thumb" src="thumbs/frest-brand-identity-naming-02.png" alt="FREST Brand Identity Naming" /><img class="thumb" src="thumbs/frest-brand-identity-naming-03.png" alt="FREST Brand Identity Naming" /><img class="thumb" src="thumbs/frest-brand-identity-naming-04.png" alt="FREST Brand Identity Naming" /></div>
+          <p class="links">
+            <a href="screenshots/frest-brand-identity-naming.png" target="_blank">Screenshot</a>
+             · <a href="pdf/frest-brand-identity-naming.pdf" target="_blank">PDF</a>
+            · <a href="raw/frest-brand-identity-naming.txt" target="_blank">Texto</a>
+            · <a href="meta/frest-brand-identity-naming.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/242794987/FREST-BRAND-IDENTITY-NAMING" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/premium-fashion-brand-website-design.png" target="_blank"><img class="hero" src="screenshots/premium-fashion-brand-website-design.png" alt="Premium Fashion Brand Website Design" /></a>
+        <div class="meta">
+          <h3>Premium Fashion Brand Website Design</h3>
+          <p class="small">Premium Fashion Brand Website Design :: Behance</p>
+          <p>Web Design, Fashion, UI/UX, Adobe XD, Adobe After Effects, Adobe Photoshop, Adobe Stock</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/premium-fashion-brand-website-design-01.png" alt="Premium Fashion Brand Website Design" /><img class="thumb" src="thumbs/premium-fashion-brand-website-design-02.png" alt="Premium Fashion Brand Website Design" /><img class="thumb" src="thumbs/premium-fashion-brand-website-design-03.png" alt="Premium Fashion Brand Website Design" /><img class="thumb" src="thumbs/premium-fashion-brand-website-design-04.png" alt="Premium Fashion Brand Website Design" /></div>
+          <p class="links">
+            <a href="screenshots/premium-fashion-brand-website-design.png" target="_blank">Screenshot</a>
+             · <a href="pdf/premium-fashion-brand-website-design.pdf" target="_blank">PDF</a>
+            · <a href="raw/premium-fashion-brand-website-design.txt" target="_blank">Texto</a>
+            · <a href="meta/premium-fashion-brand-website-design.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/245563773/Premium-Fashion-Brand-Website-Design" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/kimo-fashion-clothing-luxury-logo-brand-identity.png" target="_blank"><img class="hero" src="screenshots/kimo-fashion-clothing-luxury-logo-brand-identity.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /></a>
+        <div class="meta">
+          <h3>Kimo Fashion Clothing Luxury Logo Brand Identity</h3>
+          <p class="small">Kimo-Fashion Clothing/Luxyry Logo & Brand Identity. :: Behance</p>
+          <p>Kimo Clothing — Modern Minimalist Fashion BrandingKimo Clothing redefines modern minimalism through timeless fashion. The brand focuses on effortless silhouettes, soft neutral tones, and refined detailing — blending comf</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/kimo-fashion-clothing-luxury-logo-brand-identity-01.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /><img class="thumb" src="thumbs/kimo-fashion-clothing-luxury-logo-brand-identity-02.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /><img class="thumb" src="thumbs/kimo-fashion-clothing-luxury-logo-brand-identity-03.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /><img class="thumb" src="thumbs/kimo-fashion-clothing-luxury-logo-brand-identity-04.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /></div>
+          <p class="links">
+            <a href="screenshots/kimo-fashion-clothing-luxury-logo-brand-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/kimo-fashion-clothing-luxury-logo-brand-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/kimo-fashion-clothing-luxury-logo-brand-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/kimo-fashion-clothing-luxury-logo-brand-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/238260225/Kimo-Fashion-ClothingLuxyry-Logo-Brand-Identity" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/aelva-skincare-brand-identity.png" target="_blank"><img class="hero" src="screenshots/aelva-skincare-brand-identity.png" alt="AELVA Skincare Brand Identity" /></a>
+        <div class="meta">
+          <h3>AELVA Skincare Brand Identity</h3>
+          <p class="small">ÄLVA | Skincare Brand Identity :: Behance</p>
+          <p>Branding, Graphic Design, Logo Design, Adobe Illustrator, Adobe Photoshop, Figma</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/aelva-skincare-brand-identity-01.png" alt="AELVA Skincare Brand Identity" /><img class="thumb" src="thumbs/aelva-skincare-brand-identity-02.png" alt="AELVA Skincare Brand Identity" /><img class="thumb" src="thumbs/aelva-skincare-brand-identity-03.png" alt="AELVA Skincare Brand Identity" /><img class="thumb" src="thumbs/aelva-skincare-brand-identity-04.png" alt="AELVA Skincare Brand Identity" /></div>
+          <p class="links">
+            <a href="screenshots/aelva-skincare-brand-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/aelva-skincare-brand-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/aelva-skincare-brand-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/aelva-skincare-brand-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/246613841/AELVA-Skincare-Brand-Identity" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+      </div>
+    </section>
+    
+    <section class="section" id="elementos">
+      <div class="section-head">
+        <div>
+          <h2>2. Elementos</h2>
+          <p class="objective">Objetivo: mostrar o sistema visual que sustenta a marca além do logo.</p>
+        </div>
+      </div>
+
+      <div class="brief">
+        
+        <div class="rules">
+          <strong>Critérios estratégicos</strong>
+          <ul>
+            <li>Formas e geometrias — linhas limpas, blocos bem resolvidos, recortes precisos, modularidade.</li><li>Texturas e superfícies — fosco, acetinado, escovado, materiais com aparência tátil e controlada.</li><li>Detalhes gráficos — grids, enquadramentos, barras, áreas de respiro, composições com tensão elegante.</li><li>Materiais visuais de referência — metais escovados, nylon premium, couro técnico, superfícies neutras.</li><li>O que evitar — excesso de ornamento, elementos boêmios, excesso de informação, visual artesanal sem controle.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid">
+        
+      <article class="card">
+        <a href="screenshots/l-s-leather.png" target="_blank"><img class="hero" src="screenshots/l-s-leather.png" alt="L&S Leather" /></a>
+        <div class="meta">
+          <h3>L&S Leather</h3>
+          <p class="small">Leather Strap, Chain Strap, Bag Hardware Supplies - L&S LEATHER</p>
+          <p>Buy handbag accessories at L&S Leather Australia. Browse our latest collection of leather straps, chain straps, hardware supplies, key chains. Top rated.</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/l-s-leather-01.png" alt="L&S Leather" /><img class="thumb" src="thumbs/l-s-leather-02.png" alt="L&S Leather" /><img class="thumb" src="thumbs/l-s-leather-03.png" alt="L&S Leather" /><img class="thumb" src="thumbs/l-s-leather-04.png" alt="L&S Leather" /></div>
+          <p class="links">
+            <a href="screenshots/l-s-leather.png" target="_blank">Screenshot</a>
+             · <a href="pdf/l-s-leather.pdf" target="_blank">PDF</a>
+            · <a href="raw/l-s-leather.txt" target="_blank">Texto</a>
+            · <a href="meta/l-s-leather.json" target="_blank">Meta</a>
+            · <a href="https://lsleather.com.au" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/sticky-zoo-instagram.png" target="_blank"><img class="hero" src="screenshots/sticky-zoo-instagram.png" alt="Sticky Zoo Instagram" /></a>
+        <div class="meta">
+          <h3>Sticky Zoo Instagram</h3>
+          <p class="small">STICKY ZOO (@_stickyzoo_) • Fotos e vídeos do Instagram</p>
+          <p>225K seguidores, 58 seguindo, 206 posts — STICKY ZOO (@_stickyzoo_) no Instagram: "Sticky things you love—handcrafted charms, stylish cases, & exclusive clothing. Perfect for elegance & gifts. ✨"</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/sticky-zoo-instagram-01.png" alt="Sticky Zoo Instagram" /><img class="thumb" src="thumbs/sticky-zoo-instagram-02.png" alt="Sticky Zoo Instagram" /><img class="thumb" src="thumbs/sticky-zoo-instagram-03.png" alt="Sticky Zoo Instagram" /></div>
+          <p class="links">
+            <a href="screenshots/sticky-zoo-instagram.png" target="_blank">Screenshot</a>
+             · <a href="pdf/sticky-zoo-instagram.pdf" target="_blank">PDF</a>
+            · <a href="raw/sticky-zoo-instagram.txt" target="_blank">Texto</a>
+            · <a href="meta/sticky-zoo-instagram.json" target="_blank">Meta</a>
+            · <a href="https://www.instagram.com/_stickyzoo_" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/louvini-distrib-japan-instagram.png" target="_blank"><img class="hero" src="screenshots/louvini-distrib-japan-instagram.png" alt="Louvini Distrib Japan Instagram" /></a>
+        <div class="meta">
+          <h3>Louvini Distrib Japan Instagram</h3>
+          <p class="small">Louvini paris 日本代理店 (@louvini_distrib_japan) • Fotos e vídeos do Instagram</p>
+          <p>8,201 seguidores, 105 seguindo, 318 posts — Louvini paris  日本代理店 (@louvini_distrib_japan) no Instagram: "フランスパリ🇫🇷より初上陸のスマホアクセサリーブランド
+📍4/22-29 伊勢丹新宿店 フランス展
+DMは対応いたしかねますのでメールにてお問い合わせください。"</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/louvini-distrib-japan-instagram-01.png" alt="Louvini Distrib Japan Instagram" /><img class="thumb" src="thumbs/louvini-distrib-japan-instagram-02.png" alt="Louvini Distrib Japan Instagram" /><img class="thumb" src="thumbs/louvini-distrib-japan-instagram-03.png" alt="Louvini Distrib Japan Instagram" /><img class="thumb" src="thumbs/louvini-distrib-japan-instagram-04.png" alt="Louvini Distrib Japan Instagram" /></div>
+          <p class="links">
+            <a href="screenshots/louvini-distrib-japan-instagram.png" target="_blank">Screenshot</a>
+             · <a href="pdf/louvini-distrib-japan-instagram.pdf" target="_blank">PDF</a>
+            · <a href="raw/louvini-distrib-japan-instagram.txt" target="_blank">Texto</a>
+            · <a href="meta/louvini-distrib-japan-instagram.json" target="_blank">Meta</a>
+            · <a href="https://www.instagram.com/louvini_distrib_japan" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/cases-papaya-instagram.png" target="_blank"><img class="hero" src="screenshots/cases-papaya-instagram.png" alt="Cases Papaya Instagram" /></a>
+        <div class="meta">
+          <h3>Cases Papaya Instagram</h3>
+          <p class="small">Instagram</p>
+          <p>85K seguidores, 358 seguindo, 1,202 posts — Cases Papaya (@casespapaya) no Instagram: "Descomplicando sua vida ✨
+Cases com alça integrada para iPhone 🤳
+Compre pelo link 👇"</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/cases-papaya-instagram-01.png" alt="Cases Papaya Instagram" /><img class="thumb" src="thumbs/cases-papaya-instagram-02.png" alt="Cases Papaya Instagram" /><img class="thumb" src="thumbs/cases-papaya-instagram-03.png" alt="Cases Papaya Instagram" /><img class="thumb" src="thumbs/cases-papaya-instagram-04.png" alt="Cases Papaya Instagram" /></div>
+          <p class="links">
+            <a href="screenshots/cases-papaya-instagram.png" target="_blank">Screenshot</a>
+             · <a href="pdf/cases-papaya-instagram.pdf" target="_blank">PDF</a>
+            · <a href="raw/cases-papaya-instagram.txt" target="_blank">Texto</a>
+            · <a href="meta/cases-papaya-instagram.json" target="_blank">Meta</a>
+            · <a href="https://www.instagram.com/casespapaya" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/aya-pitaya-instagram.png" target="_blank"><img class="hero" src="screenshots/aya-pitaya-instagram.png" alt="Aya Pitaya Instagram" /></a>
+        <div class="meta">
+          <h3>Aya Pitaya Instagram</h3>
+          <p class="small">Instagram</p>
+          <p>51K seguidores, 5,658 seguindo, 1,137 posts — AYA PITAYA (@aya_pitaya) no Instagram: "Envio para todo o Brasil
+📍SP | Shopping Cidade Jardim, 
+Higienópolis, Shops Jardins
+📍 RJ | Shopping Rio Sul
+Desde 2020.
+#DandoCordap</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/aya-pitaya-instagram-01.png" alt="Aya Pitaya Instagram" /><img class="thumb" src="thumbs/aya-pitaya-instagram-02.png" alt="Aya Pitaya Instagram" /><img class="thumb" src="thumbs/aya-pitaya-instagram-03.png" alt="Aya Pitaya Instagram" /><img class="thumb" src="thumbs/aya-pitaya-instagram-04.png" alt="Aya Pitaya Instagram" /></div>
+          <p class="links">
+            <a href="screenshots/aya-pitaya-instagram.png" target="_blank">Screenshot</a>
+             · <a href="pdf/aya-pitaya-instagram.pdf" target="_blank">PDF</a>
+            · <a href="raw/aya-pitaya-instagram.txt" target="_blank">Texto</a>
+            · <a href="meta/aya-pitaya-instagram.json" target="_blank">Meta</a>
+            · <a href="https://www.instagram.com/aya_pitaya" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/velotti.png" target="_blank"><img class="hero" src="screenshots/velotti.png" alt="Velotti" /></a>
+        <div class="meta">
+          <h3>Velotti</h3>
+          <p class="small">Velotti :: Behance</p>
+          <p>Branding, Fashion, Graphic Design, Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Adobe Stock</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/velotti-01.png" alt="Velotti" /><img class="thumb" src="thumbs/velotti-02.png" alt="Velotti" /><img class="thumb" src="thumbs/velotti-03.png" alt="Velotti" /><img class="thumb" src="thumbs/velotti-04.png" alt="Velotti" /></div>
+          <p class="links">
+            <a href="screenshots/velotti.png" target="_blank">Screenshot</a>
+             · <a href="pdf/velotti.pdf" target="_blank">PDF</a>
+            · <a href="raw/velotti.txt" target="_blank">Texto</a>
+            · <a href="meta/velotti.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/218800855/Velotti" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/chromia-blockchain-identity.png" target="_blank"><img class="hero" src="screenshots/chromia-blockchain-identity.png" alt="Chromia Blockchain Identity" /></a>
+        <div class="meta">
+          <h3>Chromia Blockchain Identity</h3>
+          <p class="small">Chromia — Blockchain Identity, UX/UI & Marketing Design :: Behance</p>
+          <p>We teamed up with Chromia, a Web3 blockchain platform that’s on a mission to make decentralized apps faster, smarter, and more accessible. Their vision is simple: blockchain should feel creative, human, and open to every</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/chromia-blockchain-identity-01.png" alt="Chromia Blockchain Identity" /><img class="thumb" src="thumbs/chromia-blockchain-identity-02.png" alt="Chromia Blockchain Identity" /><img class="thumb" src="thumbs/chromia-blockchain-identity-03.png" alt="Chromia Blockchain Identity" /><img class="thumb" src="thumbs/chromia-blockchain-identity-04.png" alt="Chromia Blockchain Identity" /></div>
+          <p class="links">
+            <a href="screenshots/chromia-blockchain-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/chromia-blockchain-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/chromia-blockchain-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/chromia-blockchain-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/234725045/Chromia-Blockchain-Identity-UXUI-Marketing-Design" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/attico-brand-identity.png" target="_blank"><img class="hero" src="screenshots/attico-brand-identity.png" alt="Attico Brand Identity" /></a>
+        <div class="meta">
+          <h3>Attico Brand Identity</h3>
+          <p class="small">Attico™ | Brand Identity | '24 :: Behance</p>
+          <p>Graphic Design, Art Direction, Branding, Adobe Photoshop, Adobe Illustrator, Figma</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/attico-brand-identity-01.png" alt="Attico Brand Identity" /><img class="thumb" src="thumbs/attico-brand-identity-02.png" alt="Attico Brand Identity" /><img class="thumb" src="thumbs/attico-brand-identity-03.png" alt="Attico Brand Identity" /><img class="thumb" src="thumbs/attico-brand-identity-04.png" alt="Attico Brand Identity" /></div>
+          <p class="links">
+            <a href="screenshots/attico-brand-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/attico-brand-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/attico-brand-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/attico-brand-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/193275595/Attico-Brand-Identity-24" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/artica-id.png" target="_blank"><img class="hero" src="screenshots/artica-id.png" alt="ARTICA ID" /></a>
+        <div class="meta">
+          <h3>ARTICA ID</h3>
+          <p class="small">ARTICA® — ID :: Behance</p>
+          <p>ARTICA is not just streetwear. It’s the silence before the storm, the chill before the fire. Born in Germany and designed for the bold, ARTICA is for those who wear their identity like armor. The rebels, the creatives, t</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/artica-id-01.png" alt="ARTICA ID" /><img class="thumb" src="thumbs/artica-id-02.png" alt="ARTICA ID" /><img class="thumb" src="thumbs/artica-id-03.png" alt="ARTICA ID" /><img class="thumb" src="thumbs/artica-id-04.png" alt="ARTICA ID" /></div>
+          <p class="links">
+            <a href="screenshots/artica-id.png" target="_blank">Screenshot</a>
+             · <a href="pdf/artica-id.pdf" target="_blank">PDF</a>
+            · <a href="raw/artica-id.txt" target="_blank">Texto</a>
+            · <a href="meta/artica-id.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/229381599/ARTICA-ID" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/atelier-by-shouq-brand-identity.png" target="_blank"><img class="hero" src="screenshots/atelier-by-shouq-brand-identity.png" alt="Atelier By Shouq Brand Identity" /></a>
+        <div class="meta">
+          <h3>Atelier By Shouq Brand Identity</h3>
+          <p class="small">Atelier By Shouq | Brand Identity :: Behance</p>
+          <p>Atelier by Shouq was envisioned as more than a fashion label—it is an exploration of refined femininity through form, texture, and intention.</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-01.png" alt="Atelier By Shouq Brand Identity" /><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-02.png" alt="Atelier By Shouq Brand Identity" /><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-03.png" alt="Atelier By Shouq Brand Identity" /><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-04.png" alt="Atelier By Shouq Brand Identity" /></div>
+          <p class="links">
+            <a href="screenshots/atelier-by-shouq-brand-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/atelier-by-shouq-brand-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/atelier-by-shouq-brand-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/atelier-by-shouq-brand-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/246012909/Atelier-By-Shouq-Brand-Identity" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/loop-fashion-e-commerce-branding-web-design.png" target="_blank"><img class="hero" src="screenshots/loop-fashion-e-commerce-branding-web-design.png" alt="LOOP Fashion E-commerce Branding Web Design" /></a>
+        <div class="meta">
+          <h3>LOOP Fashion E-commerce Branding Web Design</h3>
+          <p class="small">LOOP — Fashion E-commerce, Branding & Web Design :: Behance</p>
+          <p>LOOP is a creative design concept where we bring together sustainable fashion, e-commerce thinking, and visual identity into one calm, modern experience.We explored how branding, UX/UI, and web design can shape a fashion</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-01.png" alt="LOOP Fashion E-commerce Branding Web Design" /><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-02.png" alt="LOOP Fashion E-commerce Branding Web Design" /><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-03.png" alt="LOOP Fashion E-commerce Branding Web Design" /><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-04.png" alt="LOOP Fashion E-commerce Branding Web Design" /></div>
+          <p class="links">
+            <a href="screenshots/loop-fashion-e-commerce-branding-web-design.png" target="_blank">Screenshot</a>
+             · <a href="pdf/loop-fashion-e-commerce-branding-web-design.pdf" target="_blank">PDF</a>
+            · <a href="raw/loop-fashion-e-commerce-branding-web-design.txt" target="_blank">Texto</a>
+            · <a href="meta/loop-fashion-e-commerce-branding-web-design.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/241787329/LOOP-Fashion-E-commerce-Branding-Web-Design" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/frest-brand-identity-naming.png" target="_blank"><img class="hero" src="screenshots/frest-brand-identity-naming.png" alt="FREST Brand Identity Naming" /></a>
+        <div class="meta">
+          <h3>FREST Brand Identity Naming</h3>
+          <p class="small">FREST | BRAND IDENTITY & NAMING :: Behance</p>
+          <p>FREST is a modern skincare brand. The project includes the development of naming, logo, packaging, and a cohesive visual identity.</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/frest-brand-identity-naming-01.png" alt="FREST Brand Identity Naming" /><img class="thumb" src="thumbs/frest-brand-identity-naming-02.png" alt="FREST Brand Identity Naming" /><img class="thumb" src="thumbs/frest-brand-identity-naming-03.png" alt="FREST Brand Identity Naming" /><img class="thumb" src="thumbs/frest-brand-identity-naming-04.png" alt="FREST Brand Identity Naming" /></div>
+          <p class="links">
+            <a href="screenshots/frest-brand-identity-naming.png" target="_blank">Screenshot</a>
+             · <a href="pdf/frest-brand-identity-naming.pdf" target="_blank">PDF</a>
+            · <a href="raw/frest-brand-identity-naming.txt" target="_blank">Texto</a>
+            · <a href="meta/frest-brand-identity-naming.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/242794987/FREST-BRAND-IDENTITY-NAMING" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/evolv-education-website-development.png" target="_blank"><img class="hero" src="screenshots/evolv-education-website-development.png" alt="Evolv Education Website Development" /></a>
+        <div class="meta">
+          <h3>Evolv Education Website Development</h3>
+          <p class="small">Evolv Education | Modern website & development :: Behance</p>
+          <p>UI/UX, Web Design, Figma, Adobe Photoshop</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/evolv-education-website-development-01.png" alt="Evolv Education Website Development" /><img class="thumb" src="thumbs/evolv-education-website-development-02.png" alt="Evolv Education Website Development" /><img class="thumb" src="thumbs/evolv-education-website-development-03.png" alt="Evolv Education Website Development" /><img class="thumb" src="thumbs/evolv-education-website-development-04.png" alt="Evolv Education Website Development" /></div>
+          <p class="links">
+            <a href="screenshots/evolv-education-website-development.png" target="_blank">Screenshot</a>
+             · <a href="pdf/evolv-education-website-development.pdf" target="_blank">PDF</a>
+            · <a href="raw/evolv-education-website-development.txt" target="_blank">Texto</a>
+            · <a href="meta/evolv-education-website-development.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/246361575/Evolv-Education-Modern-website-development" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/premium-fashion-brand-website-design.png" target="_blank"><img class="hero" src="screenshots/premium-fashion-brand-website-design.png" alt="Premium Fashion Brand Website Design" /></a>
+        <div class="meta">
+          <h3>Premium Fashion Brand Website Design</h3>
+          <p class="small">Premium Fashion Brand Website Design :: Behance</p>
+          <p>Web Design, Fashion, UI/UX, Adobe XD, Adobe After Effects, Adobe Photoshop, Adobe Stock</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/premium-fashion-brand-website-design-01.png" alt="Premium Fashion Brand Website Design" /><img class="thumb" src="thumbs/premium-fashion-brand-website-design-02.png" alt="Premium Fashion Brand Website Design" /><img class="thumb" src="thumbs/premium-fashion-brand-website-design-03.png" alt="Premium Fashion Brand Website Design" /><img class="thumb" src="thumbs/premium-fashion-brand-website-design-04.png" alt="Premium Fashion Brand Website Design" /></div>
+          <p class="links">
+            <a href="screenshots/premium-fashion-brand-website-design.png" target="_blank">Screenshot</a>
+             · <a href="pdf/premium-fashion-brand-website-design.pdf" target="_blank">PDF</a>
+            · <a href="raw/premium-fashion-brand-website-design.txt" target="_blank">Texto</a>
+            · <a href="meta/premium-fashion-brand-website-design.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/245563773/Premium-Fashion-Brand-Website-Design" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/kimo-fashion-clothing-luxury-logo-brand-identity.png" target="_blank"><img class="hero" src="screenshots/kimo-fashion-clothing-luxury-logo-brand-identity.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /></a>
+        <div class="meta">
+          <h3>Kimo Fashion Clothing Luxury Logo Brand Identity</h3>
+          <p class="small">Kimo-Fashion Clothing/Luxyry Logo & Brand Identity. :: Behance</p>
+          <p>Kimo Clothing — Modern Minimalist Fashion BrandingKimo Clothing redefines modern minimalism through timeless fashion. The brand focuses on effortless silhouettes, soft neutral tones, and refined detailing — blending comf</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/kimo-fashion-clothing-luxury-logo-brand-identity-01.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /><img class="thumb" src="thumbs/kimo-fashion-clothing-luxury-logo-brand-identity-02.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /><img class="thumb" src="thumbs/kimo-fashion-clothing-luxury-logo-brand-identity-03.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /><img class="thumb" src="thumbs/kimo-fashion-clothing-luxury-logo-brand-identity-04.png" alt="Kimo Fashion Clothing Luxury Logo Brand Identity" /></div>
+          <p class="links">
+            <a href="screenshots/kimo-fashion-clothing-luxury-logo-brand-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/kimo-fashion-clothing-luxury-logo-brand-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/kimo-fashion-clothing-luxury-logo-brand-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/kimo-fashion-clothing-luxury-logo-brand-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/238260225/Kimo-Fashion-ClothingLuxyry-Logo-Brand-Identity" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+      </div>
+    </section>
+    
+    <section class="section" id="fotografia">
+      <div class="section-head">
+        <div>
+          <h2>3. Fotografia</h2>
+          <p class="objective">Objetivo: traduzir o universo aspiracional e comportamental da marca.</p>
+        </div>
+      </div>
+
+      <div class="brief">
+        
+        <div class="rules">
+          <strong>Critérios estratégicos</strong>
+          <ul>
+            <li>Direção de imagem — editorial contemporâneo, sofisticado, urbano, silencioso, preciso.</li><li>Luz — natural controlada ou artificial suave, com contraste elegante.</li><li>Enquadramento — close de material, detalhe de uso, corpo em movimento, recortes inteligentes.</li><li>Cenários — arquitetura limpa, superfícies neutras, contexto urbano premium, interiores minimalistas.</li><li>Sensação que a imagem deve passar — identidade, mobilidade, desejo, presença, refinamento sem exagero.</li><li>O que evitar — excesso de pose, lifestyle genérico, praia óbvia, imagem colorida demais, estética instagramável vazia.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid">
+        
+      <article class="card">
+        <a href="screenshots/sticky-zoo-instagram.png" target="_blank"><img class="hero" src="screenshots/sticky-zoo-instagram.png" alt="Sticky Zoo Instagram" /></a>
+        <div class="meta">
+          <h3>Sticky Zoo Instagram</h3>
+          <p class="small">STICKY ZOO (@_stickyzoo_) • Fotos e vídeos do Instagram</p>
+          <p>225K seguidores, 58 seguindo, 206 posts — STICKY ZOO (@_stickyzoo_) no Instagram: "Sticky things you love—handcrafted charms, stylish cases, & exclusive clothing. Perfect for elegance & gifts. ✨"</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/sticky-zoo-instagram-01.png" alt="Sticky Zoo Instagram" /><img class="thumb" src="thumbs/sticky-zoo-instagram-02.png" alt="Sticky Zoo Instagram" /><img class="thumb" src="thumbs/sticky-zoo-instagram-03.png" alt="Sticky Zoo Instagram" /></div>
+          <p class="links">
+            <a href="screenshots/sticky-zoo-instagram.png" target="_blank">Screenshot</a>
+             · <a href="pdf/sticky-zoo-instagram.pdf" target="_blank">PDF</a>
+            · <a href="raw/sticky-zoo-instagram.txt" target="_blank">Texto</a>
+            · <a href="meta/sticky-zoo-instagram.json" target="_blank">Meta</a>
+            · <a href="https://www.instagram.com/_stickyzoo_" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/louvini-distrib-japan-instagram.png" target="_blank"><img class="hero" src="screenshots/louvini-distrib-japan-instagram.png" alt="Louvini Distrib Japan Instagram" /></a>
+        <div class="meta">
+          <h3>Louvini Distrib Japan Instagram</h3>
+          <p class="small">Louvini paris 日本代理店 (@louvini_distrib_japan) • Fotos e vídeos do Instagram</p>
+          <p>8,201 seguidores, 105 seguindo, 318 posts — Louvini paris  日本代理店 (@louvini_distrib_japan) no Instagram: "フランスパリ🇫🇷より初上陸のスマホアクセサリーブランド
+📍4/22-29 伊勢丹新宿店 フランス展
+DMは対応いたしかねますのでメールにてお問い合わせください。"</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/louvini-distrib-japan-instagram-01.png" alt="Louvini Distrib Japan Instagram" /><img class="thumb" src="thumbs/louvini-distrib-japan-instagram-02.png" alt="Louvini Distrib Japan Instagram" /><img class="thumb" src="thumbs/louvini-distrib-japan-instagram-03.png" alt="Louvini Distrib Japan Instagram" /><img class="thumb" src="thumbs/louvini-distrib-japan-instagram-04.png" alt="Louvini Distrib Japan Instagram" /></div>
+          <p class="links">
+            <a href="screenshots/louvini-distrib-japan-instagram.png" target="_blank">Screenshot</a>
+             · <a href="pdf/louvini-distrib-japan-instagram.pdf" target="_blank">PDF</a>
+            · <a href="raw/louvini-distrib-japan-instagram.txt" target="_blank">Texto</a>
+            · <a href="meta/louvini-distrib-japan-instagram.json" target="_blank">Meta</a>
+            · <a href="https://www.instagram.com/louvini_distrib_japan" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/cases-papaya-instagram.png" target="_blank"><img class="hero" src="screenshots/cases-papaya-instagram.png" alt="Cases Papaya Instagram" /></a>
+        <div class="meta">
+          <h3>Cases Papaya Instagram</h3>
+          <p class="small">Instagram</p>
+          <p>85K seguidores, 358 seguindo, 1,202 posts — Cases Papaya (@casespapaya) no Instagram: "Descomplicando sua vida ✨
+Cases com alça integrada para iPhone 🤳
+Compre pelo link 👇"</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/cases-papaya-instagram-01.png" alt="Cases Papaya Instagram" /><img class="thumb" src="thumbs/cases-papaya-instagram-02.png" alt="Cases Papaya Instagram" /><img class="thumb" src="thumbs/cases-papaya-instagram-03.png" alt="Cases Papaya Instagram" /><img class="thumb" src="thumbs/cases-papaya-instagram-04.png" alt="Cases Papaya Instagram" /></div>
+          <p class="links">
+            <a href="screenshots/cases-papaya-instagram.png" target="_blank">Screenshot</a>
+             · <a href="pdf/cases-papaya-instagram.pdf" target="_blank">PDF</a>
+            · <a href="raw/cases-papaya-instagram.txt" target="_blank">Texto</a>
+            · <a href="meta/cases-papaya-instagram.json" target="_blank">Meta</a>
+            · <a href="https://www.instagram.com/casespapaya" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/aya-pitaya-instagram.png" target="_blank"><img class="hero" src="screenshots/aya-pitaya-instagram.png" alt="Aya Pitaya Instagram" /></a>
+        <div class="meta">
+          <h3>Aya Pitaya Instagram</h3>
+          <p class="small">Instagram</p>
+          <p>51K seguidores, 5,658 seguindo, 1,137 posts — AYA PITAYA (@aya_pitaya) no Instagram: "Envio para todo o Brasil
+📍SP | Shopping Cidade Jardim, 
+Higienópolis, Shops Jardins
+📍 RJ | Shopping Rio Sul
+Desde 2020.
+#DandoCordap</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/aya-pitaya-instagram-01.png" alt="Aya Pitaya Instagram" /><img class="thumb" src="thumbs/aya-pitaya-instagram-02.png" alt="Aya Pitaya Instagram" /><img class="thumb" src="thumbs/aya-pitaya-instagram-03.png" alt="Aya Pitaya Instagram" /><img class="thumb" src="thumbs/aya-pitaya-instagram-04.png" alt="Aya Pitaya Instagram" /></div>
+          <p class="links">
+            <a href="screenshots/aya-pitaya-instagram.png" target="_blank">Screenshot</a>
+             · <a href="pdf/aya-pitaya-instagram.pdf" target="_blank">PDF</a>
+            · <a href="raw/aya-pitaya-instagram.txt" target="_blank">Texto</a>
+            · <a href="meta/aya-pitaya-instagram.json" target="_blank">Meta</a>
+            · <a href="https://www.instagram.com/aya_pitaya" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/loop-fashion-e-commerce-branding-web-design.png" target="_blank"><img class="hero" src="screenshots/loop-fashion-e-commerce-branding-web-design.png" alt="LOOP Fashion E-commerce Branding Web Design" /></a>
+        <div class="meta">
+          <h3>LOOP Fashion E-commerce Branding Web Design</h3>
+          <p class="small">LOOP — Fashion E-commerce, Branding & Web Design :: Behance</p>
+          <p>LOOP is a creative design concept where we bring together sustainable fashion, e-commerce thinking, and visual identity into one calm, modern experience.We explored how branding, UX/UI, and web design can shape a fashion</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-01.png" alt="LOOP Fashion E-commerce Branding Web Design" /><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-02.png" alt="LOOP Fashion E-commerce Branding Web Design" /><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-03.png" alt="LOOP Fashion E-commerce Branding Web Design" /><img class="thumb" src="thumbs/loop-fashion-e-commerce-branding-web-design-04.png" alt="LOOP Fashion E-commerce Branding Web Design" /></div>
+          <p class="links">
+            <a href="screenshots/loop-fashion-e-commerce-branding-web-design.png" target="_blank">Screenshot</a>
+             · <a href="pdf/loop-fashion-e-commerce-branding-web-design.pdf" target="_blank">PDF</a>
+            · <a href="raw/loop-fashion-e-commerce-branding-web-design.txt" target="_blank">Texto</a>
+            · <a href="meta/loop-fashion-e-commerce-branding-web-design.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/241787329/LOOP-Fashion-E-commerce-Branding-Web-Design" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/premium-fashion-brand-website-design.png" target="_blank"><img class="hero" src="screenshots/premium-fashion-brand-website-design.png" alt="Premium Fashion Brand Website Design" /></a>
+        <div class="meta">
+          <h3>Premium Fashion Brand Website Design</h3>
+          <p class="small">Premium Fashion Brand Website Design :: Behance</p>
+          <p>Web Design, Fashion, UI/UX, Adobe XD, Adobe After Effects, Adobe Photoshop, Adobe Stock</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/premium-fashion-brand-website-design-01.png" alt="Premium Fashion Brand Website Design" /><img class="thumb" src="thumbs/premium-fashion-brand-website-design-02.png" alt="Premium Fashion Brand Website Design" /><img class="thumb" src="thumbs/premium-fashion-brand-website-design-03.png" alt="Premium Fashion Brand Website Design" /><img class="thumb" src="thumbs/premium-fashion-brand-website-design-04.png" alt="Premium Fashion Brand Website Design" /></div>
+          <p class="links">
+            <a href="screenshots/premium-fashion-brand-website-design.png" target="_blank">Screenshot</a>
+             · <a href="pdf/premium-fashion-brand-website-design.pdf" target="_blank">PDF</a>
+            · <a href="raw/premium-fashion-brand-website-design.txt" target="_blank">Texto</a>
+            · <a href="meta/premium-fashion-brand-website-design.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/245563773/Premium-Fashion-Brand-Website-Design" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+      </div>
+    </section>
+    
+    <section class="section" id="embalagens">
+      <div class="section-head">
+        <div>
+          <h2>4. Embalagens</h2>
+          <p class="objective">Objetivo: mostrar como a marca materializa valor no contato físico.</p>
+        </div>
+      </div>
+
+      <div class="brief">
+        
+        <div class="rules">
+          <strong>Critérios estratégicos</strong>
+          <ul>
+            <li>Forma da embalagem — limpa, funcional, sólida, sem excesso.</li><li>Materiais — papel premium, textura seca, acabamento fosco, possíveis detalhes em relevo ou hot stamping discreto.</li><li>Paleta aplicada — tons neutros, sofisticados, controlados.</li><li>Sensação de unboxing — precisão, cuidado, desejo, valor percebido alto.</li><li>Detalhes de acabamento — fechos simples, berço interno bem resolvido, etiqueta ou impressão com presença.</li><li>O que evitar — kraft genérico, excesso de enfeite, floral, linguagem artesanal aleatória, aparência barata.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid">
+        
+      <article class="card">
+        <a href="screenshots/l-s-leather.png" target="_blank"><img class="hero" src="screenshots/l-s-leather.png" alt="L&S Leather" /></a>
+        <div class="meta">
+          <h3>L&S Leather</h3>
+          <p class="small">Leather Strap, Chain Strap, Bag Hardware Supplies - L&S LEATHER</p>
+          <p>Buy handbag accessories at L&S Leather Australia. Browse our latest collection of leather straps, chain straps, hardware supplies, key chains. Top rated.</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/l-s-leather-01.png" alt="L&S Leather" /><img class="thumb" src="thumbs/l-s-leather-02.png" alt="L&S Leather" /><img class="thumb" src="thumbs/l-s-leather-03.png" alt="L&S Leather" /><img class="thumb" src="thumbs/l-s-leather-04.png" alt="L&S Leather" /></div>
+          <p class="links">
+            <a href="screenshots/l-s-leather.png" target="_blank">Screenshot</a>
+             · <a href="pdf/l-s-leather.pdf" target="_blank">PDF</a>
+            · <a href="raw/l-s-leather.txt" target="_blank">Texto</a>
+            · <a href="meta/l-s-leather.json" target="_blank">Meta</a>
+            · <a href="https://lsleather.com.au" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/velotti.png" target="_blank"><img class="hero" src="screenshots/velotti.png" alt="Velotti" /></a>
+        <div class="meta">
+          <h3>Velotti</h3>
+          <p class="small">Velotti :: Behance</p>
+          <p>Branding, Fashion, Graphic Design, Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Adobe Stock</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/velotti-01.png" alt="Velotti" /><img class="thumb" src="thumbs/velotti-02.png" alt="Velotti" /><img class="thumb" src="thumbs/velotti-03.png" alt="Velotti" /><img class="thumb" src="thumbs/velotti-04.png" alt="Velotti" /></div>
+          <p class="links">
+            <a href="screenshots/velotti.png" target="_blank">Screenshot</a>
+             · <a href="pdf/velotti.pdf" target="_blank">PDF</a>
+            · <a href="raw/velotti.txt" target="_blank">Texto</a>
+            · <a href="meta/velotti.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/218800855/Velotti" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/artica-id.png" target="_blank"><img class="hero" src="screenshots/artica-id.png" alt="ARTICA ID" /></a>
+        <div class="meta">
+          <h3>ARTICA ID</h3>
+          <p class="small">ARTICA® — ID :: Behance</p>
+          <p>ARTICA is not just streetwear. It’s the silence before the storm, the chill before the fire. Born in Germany and designed for the bold, ARTICA is for those who wear their identity like armor. The rebels, the creatives, t</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/artica-id-01.png" alt="ARTICA ID" /><img class="thumb" src="thumbs/artica-id-02.png" alt="ARTICA ID" /><img class="thumb" src="thumbs/artica-id-03.png" alt="ARTICA ID" /><img class="thumb" src="thumbs/artica-id-04.png" alt="ARTICA ID" /></div>
+          <p class="links">
+            <a href="screenshots/artica-id.png" target="_blank">Screenshot</a>
+             · <a href="pdf/artica-id.pdf" target="_blank">PDF</a>
+            · <a href="raw/artica-id.txt" target="_blank">Texto</a>
+            · <a href="meta/artica-id.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/229381599/ARTICA-ID" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/atelier-by-shouq-brand-identity.png" target="_blank"><img class="hero" src="screenshots/atelier-by-shouq-brand-identity.png" alt="Atelier By Shouq Brand Identity" /></a>
+        <div class="meta">
+          <h3>Atelier By Shouq Brand Identity</h3>
+          <p class="small">Atelier By Shouq | Brand Identity :: Behance</p>
+          <p>Atelier by Shouq was envisioned as more than a fashion label—it is an exploration of refined femininity through form, texture, and intention.</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-01.png" alt="Atelier By Shouq Brand Identity" /><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-02.png" alt="Atelier By Shouq Brand Identity" /><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-03.png" alt="Atelier By Shouq Brand Identity" /><img class="thumb" src="thumbs/atelier-by-shouq-brand-identity-04.png" alt="Atelier By Shouq Brand Identity" /></div>
+          <p class="links">
+            <a href="screenshots/atelier-by-shouq-brand-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/atelier-by-shouq-brand-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/atelier-by-shouq-brand-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/atelier-by-shouq-brand-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/246012909/Atelier-By-Shouq-Brand-Identity" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/gar-skincare-identity.png" target="_blank"><img class="hero" src="screenshots/gar-skincare-identity.png" alt="GAR Skincare Identity" /></a>
+        <div class="meta">
+          <h3>GAR Skincare Identity</h3>
+          <p class="small">GAR — Skincare Identity :: Behance</p>
+          <p>GAR is a skincare and beauty brand rooted in nature: earth, ocean, and flora. Inspired by grounding rituals, it reflects purity, balance, and quiet strength. The brand identity features a muted, earthy palette and minima</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/gar-skincare-identity-01.png" alt="GAR Skincare Identity" /><img class="thumb" src="thumbs/gar-skincare-identity-02.png" alt="GAR Skincare Identity" /><img class="thumb" src="thumbs/gar-skincare-identity-03.png" alt="GAR Skincare Identity" /><img class="thumb" src="thumbs/gar-skincare-identity-04.png" alt="GAR Skincare Identity" /></div>
+          <p class="links">
+            <a href="screenshots/gar-skincare-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/gar-skincare-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/gar-skincare-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/gar-skincare-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/225273181/GAR-Skincare-Identity" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/noel.png" target="_blank"><img class="hero" src="screenshots/noel.png" alt="NOEL" /></a>
+        <div class="meta">
+          <h3>NOEL</h3>
+          <p class="small">NOEL :: Behance</p>
+          <p>Branding, Graphic Design, Packaging, Adobe Illustrator, Adobe Photoshop, Figma</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/noel-01.png" alt="NOEL" /><img class="thumb" src="thumbs/noel-02.png" alt="NOEL" /><img class="thumb" src="thumbs/noel-03.png" alt="NOEL" /><img class="thumb" src="thumbs/noel-04.png" alt="NOEL" /></div>
+          <p class="links">
+            <a href="screenshots/noel.png" target="_blank">Screenshot</a>
+             · <a href="pdf/noel.pdf" target="_blank">PDF</a>
+            · <a href="raw/noel.txt" target="_blank">Texto</a>
+            · <a href="meta/noel.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/154268451/NOEL" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/frest-brand-identity-naming.png" target="_blank"><img class="hero" src="screenshots/frest-brand-identity-naming.png" alt="FREST Brand Identity Naming" /></a>
+        <div class="meta">
+          <h3>FREST Brand Identity Naming</h3>
+          <p class="small">FREST | BRAND IDENTITY & NAMING :: Behance</p>
+          <p>FREST is a modern skincare brand. The project includes the development of naming, logo, packaging, and a cohesive visual identity.</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/frest-brand-identity-naming-01.png" alt="FREST Brand Identity Naming" /><img class="thumb" src="thumbs/frest-brand-identity-naming-02.png" alt="FREST Brand Identity Naming" /><img class="thumb" src="thumbs/frest-brand-identity-naming-03.png" alt="FREST Brand Identity Naming" /><img class="thumb" src="thumbs/frest-brand-identity-naming-04.png" alt="FREST Brand Identity Naming" /></div>
+          <p class="links">
+            <a href="screenshots/frest-brand-identity-naming.png" target="_blank">Screenshot</a>
+             · <a href="pdf/frest-brand-identity-naming.pdf" target="_blank">PDF</a>
+            · <a href="raw/frest-brand-identity-naming.txt" target="_blank">Texto</a>
+            · <a href="meta/frest-brand-identity-naming.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/242794987/FREST-BRAND-IDENTITY-NAMING" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="screenshots/aelva-skincare-brand-identity.png" target="_blank"><img class="hero" src="screenshots/aelva-skincare-brand-identity.png" alt="AELVA Skincare Brand Identity" /></a>
+        <div class="meta">
+          <h3>AELVA Skincare Brand Identity</h3>
+          <p class="small">ÄLVA | Skincare Brand Identity :: Behance</p>
+          <p>Branding, Graphic Design, Logo Design, Adobe Illustrator, Adobe Photoshop, Figma</p>
+          <div class="thumbs"><img class="thumb" src="thumbs/aelva-skincare-brand-identity-01.png" alt="AELVA Skincare Brand Identity" /><img class="thumb" src="thumbs/aelva-skincare-brand-identity-02.png" alt="AELVA Skincare Brand Identity" /><img class="thumb" src="thumbs/aelva-skincare-brand-identity-03.png" alt="AELVA Skincare Brand Identity" /><img class="thumb" src="thumbs/aelva-skincare-brand-identity-04.png" alt="AELVA Skincare Brand Identity" /></div>
+          <p class="links">
+            <a href="screenshots/aelva-skincare-brand-identity.png" target="_blank">Screenshot</a>
+             · <a href="pdf/aelva-skincare-brand-identity.pdf" target="_blank">PDF</a>
+            · <a href="raw/aelva-skincare-brand-identity.txt" target="_blank">Texto</a>
+            · <a href="meta/aelva-skincare-brand-identity.json" target="_blank">Meta</a>
+            · <a href="https://www.behance.net/gallery/246613841/AELVA-Skincare-Brand-Identity" target="_blank">Fonte</a>
+          </p>
+        </div>
+      </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

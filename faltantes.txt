@@ -1,0 +1,3 @@
+ROCKNOT Straps | https://www.rocknot.com/collections/all-straps | page.goto: Timeout 60000ms exceeded.
+Call log:
+[2m  - navigating to "https://www.rocknot.com/collections/all-straps", waiting until "domcontentloaded"[22m
